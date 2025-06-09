@@ -2,7 +2,7 @@
    HERO (ajustado al diseño Figma)
 ---------------------------- */
 .hero {
-    background-image: url('../assets/img/Plataneras.png');
+    background-image: url('assets/img/Plataneras.png');
     background-size: cover;
     background-position: center;
     height: 70vh;
@@ -130,5 +130,15 @@
       min-width: 200px;
     }
   }
-  
-  
+/* ----------------------------
+   Footer
+---------------------------- */
+.footer {
+  background-color: #f3f3f3;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 3rem;
+  font-family: 'Noto Sans', sans-serif;
+}
