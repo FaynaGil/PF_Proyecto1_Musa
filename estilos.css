@@ -1,0 +1,134 @@
+/* ----------------------------
+   HERO (ajustado al diseño Figma)
+---------------------------- */
+.hero {
+    background-image: url('../assets/img/Plataneras.png');
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .hero-content {
+    background: none; /* sin fondo oscuro */
+    padding: 1.5rem;
+  }
+  
+  .hero-content h1 {
+    font-family: 'Bentham', serif;
+    font-size: 2rem;
+    line-height: 1.2;
+    color: white;
+    text-shadow: 1px 1px 3px #000;
+    margin-bottom: 1.5rem;
+  }
+  
+  .boton {
+    background-color: #055113;
+    color: white;
+    padding: 0.6rem 2rem;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .boton:hover {
+    background-color: #04430f;
+  }
+  
+  /* ----------------------------
+     Desktop (desde 768px)
+  ---------------------------- */
+  @media (min-width: 768px) {
+    .hero {
+      height: 80vh;
+    }
+  
+    .hero-content h1 {
+      font-size: 2.8rem;
+    }
+  
+    .boton {
+      font-size: 1.1rem;
+      padding: 0.8rem 2.5rem;
+    }
+  }
+  /* ----------------------------
+   Sección de productos destacados
+---------------------------- */
+.destacados {
+    padding: 2rem;
+    background-color: #fff;
+  }
+  
+  .imagenes-grandes {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .producto {
+    position: relative;
+    text-align: center;
+  }
+  
+  .producto img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .producto .boton {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  /* Galería scroll horizontal */
+  .galeria-horizontal {
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    padding-bottom: 1rem;
+  }
+  
+  .galeria-horizontal .item {
+    min-width: 160px;
+    flex-shrink: 0;
+    text-align: center;
+  }
+  
+  .galeria-horizontal img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  /* Responsive escritorio */
+  @media (min-width: 768px) {
+    .imagenes-grandes {
+      flex-direction: row;
+    }
+  
+    .producto img {
+      height: 350px;
+      object-fit: cover;
+    }
+  
+    .galeria-horizontal {
+      justify-content: center;
+    }
+  
+    .galeria-horizontal .item {
+      min-width: 200px;
+    }
+  }
+  
+  
