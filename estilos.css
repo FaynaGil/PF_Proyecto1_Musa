@@ -142,3 +142,20 @@
   margin-top: 3rem;
   font-family: 'Noto Sans', sans-serif;
 }
+ 
+/* Ajuste específico para móviles */
+@media (max-width: 767px) {
+  .galeria-horizontal img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .galeria-horizontal .item {
+    min-width: 70%; /* ajustable */
+    margin-right: 1rem;
+  }
+
+  .galeria-horizontal {
+    padding: 1rem;
+  }
+}
