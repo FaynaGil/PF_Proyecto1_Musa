@@ -211,6 +211,7 @@
   }
   .logo-desktop {
     display: inline;
+    height: 80px;
   }
 }
 
