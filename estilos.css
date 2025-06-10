@@ -195,3 +195,22 @@
   height: 20px;
 }
 
+.logo img {
+  height: 40px;
+}
+
+/* Mostrar solo el logo móvil por defecto */
+.logo-desktop {
+  display: none;
+}
+
+/* A partir de 768px (escritorio), se oculta el móvil y se muestra el de escritorio */
+@media (min-width: 768px) {
+  .logo-mobile {
+    display: none;
+  }
+  .logo-desktop {
+    display: inline;
+  }
+}
+
