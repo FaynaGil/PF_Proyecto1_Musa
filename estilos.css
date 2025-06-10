@@ -159,3 +159,39 @@
     padding: 1rem;
   }
 }
+
+/* ----------------------------
+   NAVBAR MOBILE
+---------------------------- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: white;
+  border-bottom: 1px solid #ccc;
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.logo {
+  font-family: 'Bentham', serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #055113;
+}
+
+.icons a {
+  margin-left: 0.5rem;
+}
+
+.icons img {
+  width: 20px;
+  height: 20px;
+}
+
