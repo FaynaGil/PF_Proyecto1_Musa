@@ -76,19 +76,22 @@
 }
 
 .logo {
+  flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.logo img{
   max-height: 60px;
-  overflow: hidden;
+  height: auto;
 }
 
 .logo-mobile {
   display: block;
-  height: 40px;
 }
 
-.logo img.logo-desktop {
+.logo-desktop {
   display: none;
 }
 
@@ -218,7 +221,6 @@
 
   .navbar .logo {
     flex: 1;
-    display: flex;
     justify-content: center;
   }
 
@@ -239,6 +241,7 @@
   .logo img.logo-desktop{
     display: block;
     height: 80px;
+    width: auto;
   }
 }
 
