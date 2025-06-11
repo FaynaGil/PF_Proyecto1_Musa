@@ -83,13 +83,13 @@
 }
 
 .logo img.logo-mobile{
-  display: inline-block;
-  max-height: 40px;
-  height: auto;
+  display: none;
 }
 
 .logo img.logo-desktop {
-  display: none;
+  display: block;
+  max-height: 80px;
+  height: auto;
 }
 
 /* ----------------------------
