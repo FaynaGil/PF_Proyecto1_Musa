@@ -1,89 +1,82 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="Página de inicio de Musa, perfumería de autor.">
-        <title>Musa - Inicio</title>
-        <link rel="stylesheet" href="./estilos.css" />
-        <link href="https://fonts.googleapis.com/css2?family=Bentham&family=Noto+Sans&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-dN8X0q5v13aF3YHlj9NHDGeiRQ+5nLdMypKJ7zQuMHv/6MvO9lM2z2lT/q1HK2hR0RJYxA9P5+GtY8a+4TAC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-      </head>     
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Página de inicio de Musa, perfumería de autor.">
+  <title>Musa - Inicio</title>
+
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="./estilos.css" />
+
+  <!-- Tipografías -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-dN8X0q5v13aF3YHlj9NHDGeiRQ+5nLdMypKJ7zQuMHv/6MvO9lM2z2lT/q1HK2hR0RJYxA9P5+GtY8a+4TAC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
 <body>
 
+  <!-- NAVBAR -->
   <nav class="navbar">
     <button class="menu-toggle">☰</button>
-  
-    <div class="logo">
-      <img src="assets/LogosMusa/LogoFlorMusaMoradoBeige.png" alt="Logo móvil" class="logo-mobile">
-      <img src="assets/LogosMusa/LogotipoPrincipal.png" alt="Logo escritorio" class="logo-desktop">
 
+    <div class="logo">
+      <!-- Logo solo flor (móvil) -->
+      <img src="assets/LogosMusa/LogoFlorMusaMoradoBeige.png" alt="Logo móvil" class="logo-mobile">
+
+      <!-- Logo completo (escritorio) -->
+      <img src="assets/LogosMusa/LogotipoPrincipal.png" alt="Logo escritorio" class="logo-desktop">
     </div>
-    
-  
+
     <div class="icons">
       <a href="#"><i class="fas fa-user"></i></a>
       <a href="#"><i class="fas fa-search"></i></a>
       <a href="#"><i class="fas fa-shopping-cart"></i></a>
     </div>
-    
   </nav>
-  
+
   <!-- HERO -->
   <header class="hero">
-
     <div class="hero-content">
       <h1>Cada producto, una conexión con la naturaleza</h1>
       <a href="colecciones.html" class="boton">Comprar</a>
     </div>
-
   </header>
 
-
+  <!-- DESTACADOS -->
   <main class="destacados">
-
     <div class="imagenes-grandes">
-
       <div class="producto">
         <img src="assets/img/perfume_2.png" alt="Perfume 2">
         <a href="#" class="boton">Comprar</a>
       </div>
-
       <div class="producto">
         <img src="assets/img/perfume_1.png" alt="Perfume 1">
         <a href="#" class="boton">Comprar</a>
       </div>
-
     </div>
-  
-    <div class="galeria-horizontal">
 
+    <div class="galeria-horizontal">
       <div class="item">
         <img src="assets/img/perfume_3.png" alt="Perfume 3">
         <p>Descripción</p>
         <a href="#" class="boton">Comprar</a>
       </div>
-
       <div class="item">
         <img src="assets/img/perfume_4.png" alt="Perfume 4">
         <p>Descripción</p>
         <a href="#" class="boton">Comprar</a>
       </div>
-
       <div class="item">
         <img src="assets/img/perfume_5.png" alt="Perfume 5">
         <p>Descripción</p>
         <a href="#" class="boton">Comprar</a>
       </div>
-
     </div>
-
   </main>
 
-
+  <!-- FOOTER -->
   <footer class="footer">
     <p>&copy; 2025 Musa. Todos los derechos reservados.</p>
   </footer>
+
 </body>
 </html>
-
