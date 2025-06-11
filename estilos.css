@@ -84,11 +84,13 @@
 }
 
 .logo-mobile {
+  display: block;
   height: 40px;
 }
 
 .logo-desktop {
   display: none;
+  height: 80px;
 }
 
 /* ----------------------------
@@ -231,13 +233,12 @@
     display: none;
   }
 
-  .logo img.logo-mobile {
+  .logo-mobile {
     display: none;
   }
 
-  .logo img.logo-desktop{
+  .logo-desktop{
     display: block;
-    height: 80px;
   }
 }
 
