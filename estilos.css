@@ -75,6 +75,22 @@
   cursor: pointer;
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 60px;
+  overflow: hidden;
+}
+
+.logo-mobile {
+  height: 40px;
+}
+
+.logo-desktop {
+  display: none;
+}
+
 /* ----------------------------
    Sección de productos destacados
 ---------------------------- */
