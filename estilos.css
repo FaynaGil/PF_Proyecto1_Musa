@@ -60,14 +60,22 @@
 }
 
 /* Íconos del navbar */
+
+.icons {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.5rem;
+}
 .icons a {
-  margin-left: 0.5rem;
   color: #000;
   font-size: 1.3rem;
 }
 
 /* Botón hamburguesa */
 .menu-toggle {
+  flex: 1;
   background: none;
   border: none;
   font-size: 2rem;
