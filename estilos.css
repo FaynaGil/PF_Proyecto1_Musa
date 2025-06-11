@@ -57,12 +57,13 @@
   padding: 1rem;
   background-color: white;
   border-bottom: 1px solid #ccc;
+  gap: 1rem;
 }
 
 /* Íconos del navbar */
 
 .icons {
-  flex: 1;
+  order: 3;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -75,7 +76,7 @@
 
 /* Botón hamburguesa */
 .menu-toggle {
-  flex: 1;
+  order: 1;
   background: none;
   border: none;
   font-size: 2rem;
@@ -84,9 +85,9 @@
 }
 
 .logo {
-  flex: 1;
+  order: 2;
   display: flex;
-  align-items: center;
+  flex-grow: 1;
   justify-content: center;
 }
 
