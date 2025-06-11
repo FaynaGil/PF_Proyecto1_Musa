@@ -83,11 +83,13 @@
 }
 
 .logo img.logo-mobile{
-  display: none;
+  display: inline-block;
+  max-height: 40px;
+  height: auto;
 }
 
 .logo img.logo-desktop {
-  display: block;
+  display: none;
   max-height: 80px;
   height: auto;
 }
@@ -237,8 +239,6 @@
   
   .logo img.logo-desktop {
     display: block;
-    max-height: 80px;
-    height: auto;
   }
   
 }
