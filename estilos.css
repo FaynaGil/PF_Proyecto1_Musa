@@ -233,11 +233,12 @@
     display: none;
   }
 
-  .logo img.logo-mobile {
+  .logo .img.logo-mobile {
     display: none;
+    max-height: 60px;
   }
 
-  .logo img.logo-desktop{
+  .logo .img.logo-desktop{
     display: block;
     max-height: 80px;
   }
