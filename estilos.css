@@ -87,6 +87,11 @@
   max-height: 40px;
   height: auto;
 }
+.logo img.logo-desktop {
+  display: none;
+  max-height: 80px;
+  height: auto;
+}
 
 
 /* ----------------------------
