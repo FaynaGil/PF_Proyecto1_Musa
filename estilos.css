@@ -90,6 +90,7 @@
 
 .logo img.logo-desktop {
   display: none;
+  height: auto;
 }
 
 /* ----------------------------
