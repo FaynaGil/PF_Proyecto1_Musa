@@ -90,8 +90,6 @@
 
 .logo img.logo-desktop {
   display: none;
-  max-height: 80px;
-  height: auto;
 }
 
 /* ----------------------------
@@ -238,7 +236,8 @@
   }
   
   .logo img.logo-desktop {
-    display: block;
+    display: inline-block;
+    max-height: 80px;
   }
   
 }
