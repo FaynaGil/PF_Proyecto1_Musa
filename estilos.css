@@ -529,6 +529,15 @@ body.colecciones header.cover {
 body.page-colecciones .cover {
   background-image: none;
 }
+
+body.page-colecciones {
+  background-color: #f8f7f2;
+}
+
+body.page-colecciones .navbar {
+  background-color: #f8f7f2;
+}
+
 body.page-colecciones .nav-links a {
   color: #383e48;    /* color de enlaces */
 }
