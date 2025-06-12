@@ -92,15 +92,16 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: 2rem;
-  color: white;
 }
-.icons {
-  color: white;
-  font-size: 2rem;
+
+.icons i {
+  color: #fff;
+  font-size: 1.2rem;
+  margin: 0.5rem;
 }
 
 /* Botón hamburguesa */
+
 .menu-toggle {
   order: 1;
   background: none;
@@ -127,7 +128,6 @@
   max-height: 80px;
   height: auto;
 }
-
 
 /* ----------------------------
    Sección de colecciones
