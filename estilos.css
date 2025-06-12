@@ -1,11 +1,13 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 /* ----------------------------
-   HERO (ajustado al diseño Figma)
+   COVER (ajustado al diseño Figma)
 ---------------------------- */
-.hero {
+.cover {
   background-image: url('assets/img/Plataneras.png');
   background-size: cover;
   background-position: center;
@@ -17,12 +19,12 @@
   padding: 2rem;
 }
 
-.hero-content {
+.cover-content {
   background: none;
   padding: 1.5rem;
 }
 
-.hero-content h1 {
+.cover-content h1 {
   font-family: 'Bentham', serif;
   font-size: 2rem;
   line-height: 1.2;
@@ -58,6 +60,11 @@
   background-color: white;
   border-bottom: 1px solid #ccc;
   gap: 1rem;
+}
+.nav-links li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
 }
 
 /* Íconos del navbar */
@@ -105,9 +112,9 @@
 
 
 /* ----------------------------
-   Sección de productos destacados
+   Sección de colecciones
 ---------------------------- */
-.destacados {
+.colecciones {
   padding: 2rem;
   background-color: #fff;
 }
@@ -136,21 +143,21 @@
   transform: translateX(-50%);
 }
 
-/* Galería scroll horizontal */
-.galeria-horizontal {
+/* Los más vendidos - Galería scroll horizontal */
+.losMasVendidos {
   display: flex;
   overflow-x: auto;
   gap: 1rem;
   padding-bottom: 1rem;
 }
 
-.galeria-horizontal .item {
+.losMasVendidos .item {
   min-width: 160px;
   flex-shrink: 0;
   text-align: center;
 }
 
-.galeria-horizontal img {
+.losMasVendidos img {
   width: 100%;
   border-radius: 8px;
 }
@@ -159,14 +166,68 @@
    Footer
 ---------------------------- */
 .footer {
-  background-color: #f3f3f3;
+  background-color: #383e48;
   text-align: center;
   padding: 1rem;
   font-size: 0.9rem;
-  color: #555;
+  color: #ffffff;
   margin-top: 3rem;
   font-family: 'Noto Sans', sans-serif;
 }
+
+.footer {
+  background-color: #383e48;
+  color: #fff;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+/* Contenedor superior: logo + enlaces + mapa */
+.footer__top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 2rem 1rem;
+}
+
+/* Logo */
+.footer__logo img {
+  max-height: 60px;
+  width: auto;
+}
+
+/* Lista de enlaces */
+.footer__links {
+  list-style: none;
+  display: flex;
+  flex-direction: column; /* vertical en móvil */
+  gap: 0.5rem;
+}
+
+.footer__links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+/* Mapa */
+.footer__map img {
+  max-width: 120px;
+  width: 100%;
+  height: auto;
+}
+
+/* Contenedor inferior: derechos */
+.footer__bottom {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.8rem;
+  border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+
+
 
 /* ----------------------------
    Media Queries: Móvil
@@ -189,17 +250,17 @@
     justify-content: flex-end;
     gap: 0.5rem;
   }
-  .galeria-horizontal img {
+  .colecciones img {
     max-width: 100%;
     height: auto;
   }
 
-  .galeria-horizontal .item {
+  .colecciones .item {
     min-width: 70%;
     margin-right: 1rem;
   }
 
-  .galeria-horizontal {
+  .colecciones {
     padding: 1rem;
   }
 }
@@ -208,12 +269,12 @@
    Media Queries: Escritorio
 ---------------------------- */
 @media (min-width: 768px) {
-  /* HERO */
-  .hero {
+  /* COVER */
+  .cover {
     height: 80vh;
   }
 
-  .hero-content h1 {
+  .cover-content h1 {
     font-size: 2.8rem;
   }
 
@@ -232,11 +293,11 @@
     object-fit: cover;
   }
 
-  .galeria-horizontal {
+  .losMasVendidos {
     justify-content: center;
   }
 
-  .galeria-horizontal .item {
+  .losMasVendidos .item {
     min-width: 200px;
   }
 
@@ -269,6 +330,26 @@
   .logo img.logo-desktop {
     display: inline-block;
   }
-  
+
+  /* Footer*/
+  .footer__top {
+    flex-wrap: nowrap;
+    padding: 3rem 2rem;
+  }
+
+  .footer__links {
+    flex-direction: row;   /* de columnas a fila */
+    gap: 2rem;
+  }
+
+  .footer__links a {
+    font-size: 1rem;
+  }
+
+  .footer__map img {
+    max-width: 200px;
+  }
 }
+
+
 
