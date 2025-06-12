@@ -199,6 +199,29 @@
   margin: 0;
   transform: translateX(-50%);
 }
+
+/* --- ¿Qué dicen de nosotros? --- */
+
+.qDicenDeNosotros {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+  background: #fff;
+}
+
+.qDicenDeNosotros_inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  width: 90%;
+}
+
+.qDicenDeNosotros_inner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 /* ----------------------------
    Footer
 ---------------------------- */
