@@ -41,7 +41,7 @@
   padding: 2rem;
 }
 
-.cover-content h1 {
+.cover .h1 {
   font-family: 'Bentham', serif;
   font-size: 2rem;
   line-height: 1.2;
@@ -94,7 +94,7 @@
   gap: 0.5rem;
   color: white;
 }
-.icons a {
+.icons {
   color: white;
   font-size: 2rem;
 }
