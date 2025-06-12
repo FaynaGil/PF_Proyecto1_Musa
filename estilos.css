@@ -366,11 +366,14 @@
   /* Navbar */
   .navbar {
     padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
   }
 
   .navbar .logo {
-    flex: 1;
-    justify-content: center;
+    order: 1;
+    flex: 0 0 auto;
+    justify-content: flex-start;
   }
 
   .icons {
@@ -383,6 +386,7 @@
 
   .icons i {
     font-size: 1.6rem;
+    color:white;
   }
 
   .menu-toggle {
@@ -395,7 +399,27 @@
   
   .logo img.logo-desktop {
     display: inline-block;
-    align-items: center;
+  }
+
+  .nav-links {
+    order: 2;
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex: 1;
+    justify-content: center;
+  }
+
+  .nav-links li {
+    margin: 0;
+  }
+
+  .nav-links li a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
   }
 
   /* Footer*/
