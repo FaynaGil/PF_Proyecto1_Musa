@@ -279,7 +279,7 @@
   .navbar {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: top;
     padding: 1rem;
   }
   .navbar .nav-links {
@@ -305,6 +305,12 @@
     align-items: center;
     justify-content: flex-end;
     gap: 0.5rem;
+  }
+
+  .icons i {
+    color: #fff;
+    font-size: 0.5rem;
+    margin: 0.5rem;
   }
   .colecciones img {
     max-width: 100%;
