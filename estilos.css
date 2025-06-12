@@ -26,6 +26,8 @@
 .cover .navbar {
   background: transparent;
   position: relative;
+  padding: auto;
+  width: 100%;
   z-index: 2;
 }
 
