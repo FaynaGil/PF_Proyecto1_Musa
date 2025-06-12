@@ -361,12 +361,23 @@
   .footer__links {
     flex-direction: row;  /* en desktop lista en fila */
     gap: 2rem;
+    text-align: left;
+    flex: 1 1 auto;
+  }
+  .footer__logo {
+    flex: 1 1 auto;
+    text-align: center;
   }
   .footer__links a {
     font-size: 1rem;
   }
   .footer__map img {
-    max-width: 150px;
+    max-width: 60px;
+    width: auto;
+  }
+  .footer__map {
+    flex: 0 0 auto;
+    text-align: right;
   }
 }
 
