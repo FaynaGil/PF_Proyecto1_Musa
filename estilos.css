@@ -267,11 +267,21 @@
   .navbar .nav-links {
     display: none;
   }
-  .logo {
-    flex-grow: 1;
+  
+  .navbar .logo {
+    flex: 1;
     justify-content: center;
-    display: flex;
   }
+
+  .logo img.logo-mobile {
+    display: inline-block;
+    align-items: center;
+  }
+  
+  .logo img.logo-desktop {
+    display: none;
+  }
+
   .icons {
     display: flex;
     align-items: center;
