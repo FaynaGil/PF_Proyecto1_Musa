@@ -16,7 +16,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   text-align: center;
   padding: 0;
   width: 100%;
@@ -42,7 +42,7 @@
   padding: 2rem;
 }
 
-.cover-content h1 {
+.cover h1 {
   font-family: 'Bentham', serif;
   font-size: 2rem;
   line-height: 1.2;
