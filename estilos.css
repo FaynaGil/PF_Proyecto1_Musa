@@ -11,12 +11,17 @@
   background-image: url('assets/img/Plataneras.png');
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   height: 70vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 2rem;
+  padding: 0;
+  width: 100%;
+  margin: 0;
+
 }
 
 .cover-content {
@@ -267,7 +272,7 @@
   .navbar .nav-links {
     display: none;
   }
-  
+
   .navbar .logo {
     flex: 1;
     justify-content: center;
