@@ -529,7 +529,7 @@ body.colecciones header.cover {
 body.page-colecciones .cover {
   background-image: none;
 }
-body.page-colecciones .navbar-links a {
+body.page-colecciones .nav-links a {
   color: #383e48;    /* color de enlaces */
 }
 
