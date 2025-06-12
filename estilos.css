@@ -171,10 +171,11 @@
 .losMasVendidos {
   display: grid;
   grid-auto-flow: column;
-  grid-auto-rows: 160px;
+  grid-auto-rows: auto;
   overflow-x: auto;
   gap: 1rem;
-  overflow: auto;
+  overflow-x: auto;
+  overflow-y: hidden;
   padding-bottom: 1rem;
 }
 
@@ -337,6 +338,16 @@
   .colecciones {
     padding: 1rem;
   }
+
+  .losMasVendidos {
+    font-size: 0.8rem;
+    margin: 0.25rem 0;
+  }
+
+  .losMasVendidos .item .boton {
+    font-size: 0.9rem;
+    padding: 0.4rem 1.2rem;
+  }
 }
 
 /* ----------------------------
@@ -366,6 +377,7 @@
   .imagenes-grandes .producto {
     flex: 1 1 0;
     position: relative;
+    max-width: 50%;
   }
 
   .producto img {
