@@ -359,11 +359,13 @@
 
   /* Productos */
   .imagenes-grandes {
+    display: flex;
     flex-direction: row;
   }
 
   .imagenes-grandes .producto {
     flex: 1 1 0;
+    position: relative;
   }
 
   .producto img {
