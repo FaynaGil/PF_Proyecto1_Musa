@@ -262,7 +262,7 @@
     align-items: center;
     padding: 1rem;
   }
-  .nav-links {
+  .navbar .nav-links {
     display: none;
   }
   .logo {
