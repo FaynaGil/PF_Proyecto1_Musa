@@ -8,6 +8,7 @@
    COVER (ajustado al diseño Figma)
 ---------------------------- */
 .cover {
+  background-image: url('assets/img/Plataneras.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -524,6 +525,10 @@ body.colecciones header.cover {
 }
 
 /* ---- COLECCIONES ---- */
+
+body.page-colecciones .cover {
+  background-image: none;
+}
 body.page-colecciones .navbar-links a {
   color: #383e48;    /* color de enlaces */
 }
