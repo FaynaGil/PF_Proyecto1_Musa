@@ -335,6 +335,26 @@ body.colecciones header.cover {
     display: none;
   }
 
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li a {
+    color: white;
+    font-size: 1.2rem;
+    padding: .5rem 1rem;
+  }
+
   .navbar .logo {
     flex: 1;
     justify-content: center;
