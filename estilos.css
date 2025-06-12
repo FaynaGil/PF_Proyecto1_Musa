@@ -357,6 +357,7 @@
   
   .logo img.logo-desktop {
     display: inline-block;
+    align-items: center;
   }
 
   /* Footer*/
