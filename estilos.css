@@ -368,6 +368,8 @@
     padding: 1rem 2rem;
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
+    padding: 1rem 2rem;
   }
 
   .navbar .logo {
@@ -377,11 +379,12 @@
   }
 
   .icons {
-    flex: 1;
+    order: 3;
+    flex: 0 0 auto;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    gap: 0.5rem;
+    gap: 1rem;
   }
 
   .icons i {
@@ -408,6 +411,7 @@
     list-style: none;
     margin: 0;
     padding: 0;
+    flex: 0 0 auto;
     flex-direction: row;
     justify-content: center;
   }
@@ -416,11 +420,13 @@
     margin: 0;
   }
 
-  .nav-links li a{
+  .nav-links li a {
     color: #fff;
     text-decoration: none;
     font-weight: 500;
   }
+
+
 
   /* Footer*/
   .footer__top {
