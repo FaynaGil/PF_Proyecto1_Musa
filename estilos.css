@@ -46,7 +46,6 @@
   font-size: 2rem;
   line-height: 1.2;
   color: white;
-  text-shadow: 1px 1px 3px white;
   margin-bottom: 1.5rem;
 }
 
@@ -75,7 +74,7 @@
   align-items: center;
   padding: 1rem;
   background-color: transparent;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid;
   gap: 1rem;
 }
 .nav-links li a {
@@ -93,6 +92,7 @@
   justify-content: flex-end;
   align-items: center;
   gap: 0.5rem;
+  color: white;
 }
 .icons a {
   color: white;
