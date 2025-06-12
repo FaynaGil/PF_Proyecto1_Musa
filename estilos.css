@@ -145,46 +145,58 @@
 .imagenes-grandes {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
   margin-bottom: 2rem;
 }
 
-.producto {
+.imagenes-grandes .producto {
   position: relative;
   text-align: center;
 }
 
-.producto img {
+.imagenes-grandes .producto img {
   width: 100%;
   border-radius: 8px;
+  display: block;
 }
 
-.producto .boton {
+.imagenes-grandes .producto .boton {
   position: absolute;
-  bottom: 10px;
+  bottom: 1rem;
   left: 50%;
   transform: translateX(-50%);
 }
 
 /* Los más vendidos - Galería scroll horizontal */
 .losMasVendidos {
-  display: flex;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-rows: 160px;
   overflow-x: auto;
   gap: 1rem;
+  overflow: auto;
   padding-bottom: 1rem;
 }
 
 .losMasVendidos .item {
-  min-width: 160px;
-  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
   text-align: center;
 }
 
-.losMasVendidos img {
+.losMasVendidos .item img {
   width: 100%;
   border-radius: 8px;
 }
 
+.losMasVendidos .item p {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+}
+
+.losMasVendidos .item .boton {
+  margin-top: auto;
+}
 /* ----------------------------
    Footer
 ---------------------------- */
@@ -350,6 +362,10 @@
     flex-direction: row;
   }
 
+  .imagenes-grandes .producto {
+    flex: 1 1 0;
+  }
+
   .producto img {
     height: 350px;
     object-fit: cover;
@@ -357,6 +373,7 @@
 
   .losMasVendidos {
     justify-content: center;
+    grid-auto-columns: 200px;
   }
 
   .losMasVendidos .item {
