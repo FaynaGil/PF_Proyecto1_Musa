@@ -12,7 +12,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 70vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -25,6 +25,7 @@
 
 .cover .navbar {
   background: transparent;
+  border-bottom: none;
   position: relative;
   padding: auto;
   width: 100%;
@@ -41,12 +42,13 @@
   padding: 2rem;
 }
 
-.cover h1 {
+.cover-content h1 {
   font-family: 'Bentham', serif;
   font-size: 2rem;
   line-height: 1.2;
   color: white;
   margin-bottom: 1.5rem;
+  text-shadow: 1px 1px 4px rgba(0,,0,0.6);
 }
 
 .boton {
@@ -73,8 +75,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  background-color: transparent;
-  border-bottom: 1px solid white;
+  background: transparent;
+  border-bottom: none;
   gap: 1rem;
 }
 
