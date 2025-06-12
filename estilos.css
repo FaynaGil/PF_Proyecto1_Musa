@@ -262,6 +262,9 @@
     align-items: center;
     padding: 1rem;
   }
+  .nav-links {
+    display: none;
+  }
   .logo {
     flex-grow: 1;
     justify-content: center;
