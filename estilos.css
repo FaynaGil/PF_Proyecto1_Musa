@@ -205,6 +205,7 @@
 .qDicenDeNosotros {
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 2rem 0;
   background: #fff;
 }
@@ -218,7 +219,7 @@
 }
 
 .qDicenDeNosotros_inner img {
-  width: 100%;
+  max-width: 100px;
   height: auto;
   display: block;
 }
