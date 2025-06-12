@@ -8,28 +8,19 @@
    COVER (ajustado al diseño Figma)
 ---------------------------- */
 .cover {
-  position: relative;
   background-image: url('assets/img/Plataneras.png');
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   text-align: center;
-  padding: 2rem 1rem;
+  padding: 0;
+  width: 100%;
   margin: 0;
-}
-
-.cover ::before {
-  content:"";
-  position:absolute;
-  top:0; left: 0;
-  width: 100%; height: 100%;
-  background-color: rgba(0,0,0,0.3);
-  pointer-events: none;
-  z-index: 1;
 }
 
 .cover .navbar {
@@ -42,20 +33,21 @@
 }
 
 .cover-content {
-  position: relative;
-  z-index: 2;
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
- width: 100%;
+  justify-content: center;
+  text-align: center;
 }
 
 .cover-content h1 {
   font-family: 'Bentham', serif;
-  font-size: 2.5rem;
+  font-size: 2rem;
+  line-height: 1.2;
   color: white;
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
-  margin: 0;
+  margin-bottom: 1.5rem;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
 }
 
 .boton {
@@ -68,7 +60,6 @@
   font-weight: bold;
   font-size: 1rem;
   transition: background-color 0.3s ease;
-  margin-bottom: 2rem;
 }
 
 .boton:hover {
