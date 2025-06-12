@@ -8,7 +8,6 @@
    COVER (ajustado al diseño Figma)
 ---------------------------- */
 .cover {
-  background-image: url('assets/img/Plataneras.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
