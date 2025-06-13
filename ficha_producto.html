@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ficha de producto Musa, perfumería de autor.">
+  <title>Musa – Ficha de producto</title>
+
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="./estilos.css" />
+  <!-- Iconografía -->
+  <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" 
+    rel="stylesheet"
+  />
+</head>
+
+<body class="page-product">
+
+  <!-- NAVBAR -->
+  <header class="cover">
+    <nav class="navbar">
+      <button class="menu-toggle"><i class="bi bi-list"></i></button>
+      <div class="logo">
+        <img src="assets/LogosMusa/LogoFlorMusaMoradoBeige.png" 
+             alt="Logo móvil" 
+             class="logo-mobile">
+        <img src="assets/LogosMusa/LogotipoPrincipal.png" 
+             alt="Logo escritorio" 
+             class="logo-desktop">
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="colecciones.html">Colecciones</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+      <div class="icons">
+        <i class="bi bi-person"></i>
+        <i class="bi bi-search"></i>
+        <i class="bi bi-cart"></i>
+      </div>
+    </nav>
+  </header>
+
+  <!-- BREADCRUMB -->
+  <div class="breadcrumb">
+    <a href="index.html">Home</a> /
+    <a href="colecciones.html">Colecciones</a> /
+    <span>Ficha de producto</span>
+  </div>
+
+  <main class="product-page">
+
+    <!-- 1. CARRUSEL -->
+    <section class="product-page__carousel">
+      <!-- miniaturas -->
+      <div class="carousel__thumbnails">
+        <img src="assets/img/pack_spa_3.png" alt="Pack spa miniatura">
+        <img src="assets/img/pac_spa_1.png"  alt="Pack spa 2 miniatura">
+        <img src="assets/img/vela_3_2_1_5_(2).png" alt="Vela miniatura">
+      </div>
+      <!-- imagen principal + flechas -->
+      <div class="carousel__main">
+        <button class="carousel__arrow carousel__arrow--prev">&lt;</button>
+        <img src="assets/img/pack_spa_3.png" alt="Pack spa grande">
+        <button class="carousel__arrow carousel__arrow--next">&gt;</button>
+      </div>
+    </section>
+
+    <!-- 2. INFO BÁSICA -->
+    <section class="product-page__info">
+      <h1 class="product-page__title">Pack Spa Relax</h1>
+      <p class="product-page__price">20,00 €</p>
+      <div class="product-page__sizes">
+        <label><input type="radio" name="size" value="10"> 10 ml</label>
+        <label><input type="radio" name="size" value="50"> 50 ml</label>
+      </div>
+      <button class="btn btn--add-cart">Añadir al carrito</button>
+    </section>
+
+    <!-- 3. DESCRIPCIÓN -->
+    <section class="product-page__description">
+      <h2>Descripción del producto</h2>
+      <p>
+        Nuestro pack spa incluye un exfoliante corporal y una vela aromática de origen 
+        canario, elaborados con ingredientes autóctonos: miel de palma y perfume de tajinaste. 
+        Disfruta de una experiencia sensorial única que te conectará con la naturaleza.
+      </p>
+    </section>
+
+    <!-- 4. ACCIÓN -->
+    <section class="product-page__action">
+      <div class="product-page__sizes--mobile">
+        <label><input type="radio" name="size-mobile" value="10"> 10 ml</label>
+        <label><input type="radio" name="size-mobile" value="50"> 50 ml</label>
+      </div>
+      <button class="btn btn--add-cart btn--mobile">Añadir al carrito</button>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__top">
+      <ul class="footer__links">
+        <li><a href="#">Políticas</a></li>
+        <li><a href="#">Suscripciones</a></li>
+        <li><a href="#">Datos de la empresa</a></li>
+      </ul>
+      <div class="footer__logo">
+        <img src="assets/LogosMusa/LogoMusaBlanco.png" alt="Logo Musa blanco">
+      </div>
+      <div class="footer__map">
+        <img src="assets/LogosMusa/mapa.png" alt="Mapa de ubicación">
+      </div>
+    </div>
+    <div class="footer__social">
+      <i class="bi bi-whatsapp"></i>
+      <i class="bi bi-youtube"></i>
+      <i class="bi bi-tiktok"></i>
+      <i class="bi bi-twitter"></i>
+      <i class="bi bi-telegram"></i>
+      <i class="bi bi-instagram"></i>
+    </div>
+    <div class="footer__bottom">
+      <p>&copy; 2025 Musa. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Toggle menú móvil
+    document.addEventListener('DOMContentLoaded', function(){
+      const toggle = document.querySelector('.menu-toggle');
+      const nav    = document.querySelector('.nav-links');
+      toggle.addEventListener('click', () => nav.classList.toggle('active'));
+    });
+  </script>
+
+</body>
+</html>
+

@@ -591,7 +591,6 @@ body.colecciones header.cover {
   .footer__map img {
     max-width: 60px;
     width: auto;
-    border-radius: 8px;
   }
   .footer__map {
     flex: 0 0 auto;
