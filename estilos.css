@@ -326,6 +326,8 @@ body.colecciones header.cover {
 ---------------------------- */
 @media (max-width: 767px) {
   .navbar {
+    position: relative;
+    background: transparent;
     display: flex;
     justify-content: space-between;
     align-items: top;
