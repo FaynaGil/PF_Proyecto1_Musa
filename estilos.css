@@ -425,6 +425,12 @@ body.colecciones header.cover {
   }
 
   /* -- páginas nosotros -- */
+  /* El encabezado ocupa todo el ancho */
+ body.page-nosotros .page-header-nosotros {
+  max-width: 100%;
+  margin: 0;
+  padding: 1rem;
+ }
  body.page-nosotros .nosotros-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -437,10 +443,12 @@ body.colecciones header.cover {
   display: none;
  }
 
+ /* Ajustar cada imagen al contendeor */
  body.page-nosotros .nosotros-grid .item img {
   width: 100%;
   height: auto;
   object-fit: cover;
+  display: block;
  }
 }
 
