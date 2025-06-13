@@ -552,7 +552,9 @@ body.colecciones header.cover {
   }
 }
 
-/* ---- COLECCIONES ---- */
+/* -------------------------------- 
+   Estilos para page-colecciones
+   -------------------------------*/
 
 body.page-colecciones .cover {
   background-image: none;
@@ -579,5 +581,11 @@ body.page-colecciones .icons i {
   color: #383e48;   /* color de iconos */
 }
 
+body.page-colecciones .breadcrumb {
+  background-color: #8CBF8C;
+}
+
+body.page-colecciones .breadcrumb a { color: #055113;}
+body.page-colecciones .breadcrumb span {color: #333;}
 
 
