@@ -406,6 +406,9 @@ body.colecciones header.cover {
     font-size: 0.9rem;
     padding: 0.4rem 1.2rem;
   }
+
+  /* ------- page-colecciones -------*/
+  .navbar.page-coleciones .menu-toggle { color: #383e48;}
 }
 
 /* ----------------------------
@@ -599,5 +602,5 @@ body.page-colecciones .breadcrumb {
 body.page-colecciones .navbar + .breadcrumb {
   margin-top: 0.25rem;
 }
-.navbar.page-coleciones .menu-toggle { color: #383e48;}
+
 
