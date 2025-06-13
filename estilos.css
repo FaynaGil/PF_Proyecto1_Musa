@@ -959,6 +959,7 @@ body.page-product {
   background-color: #f8f7f2;
   color: #333;
   font-family: 'Noto Sans', sans-serif;
+  padding-bottom: 0;
 }
 
 body.page-product .product-page {
@@ -968,4 +969,21 @@ body.page-product .product-page {
   max-width: 1200px;
   margin: 0 auto;
   padding: 1rem;
+}
+
+body.page-product {
+  padding-bottom: 0;
+}
+
+body.page-product .header.cover {
+  margin-bottom: 0;
+}
+
+body.page-product .breadcrumb {
+  margin-top: 0;
+}
+
+body.page-product .navbar .icons .i,
+body.page-product .navbar .nav-links li a {
+  color: #383e48 !important;
 }
