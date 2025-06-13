@@ -603,5 +603,16 @@ body.page-colecciones .breadcrumb {
 body.page-colecciones .navbar + .breadcrumb {
   margin-top: 0;
 }
+/* --- height: 80vh ya no se aplicará en colecciones ni en las siguientes páginas ---*/
 
+/* ------------------------------------------- 
+   YA NUNCA SE APLICA height:80vh EN COLECCIONES
+   ------------------------------------------- */
+   body.page-colecciones .cover {
+    /* anulamos todo lo que viniera antes */
+    height: auto !important;
+    min-height: 0        !important;
+    padding-bottom: 0    !important;
+  }
+  
 
