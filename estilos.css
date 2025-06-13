@@ -408,8 +408,8 @@ body.colecciones header.cover {
   }
 
   /* ------- page-colecciones -------*/
-  .body.page-colecciones .menu-toggle,
-  .body.page-colecciones .menu-toggle i { 
+  body.page-colecciones .menu-toggle,
+  body.page-colecciones .menu-toggle i { 
     color: #383e48 !important;}
 }
 
