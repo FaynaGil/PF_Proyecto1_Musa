@@ -411,7 +411,12 @@ body.colecciones header.cover {
   body.page-colecciones .menu-toggle,
   body.page-colecciones .menu-toggle i { 
     color: #383e48 !important;}
+
+  body.page-colecciones .nav-links.active li a {
+    color: #fff !important;
+  }
 }
+
 
 /* ----------------------------
    Media Queries: Escritorio
