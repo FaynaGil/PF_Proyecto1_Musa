@@ -423,11 +423,18 @@ body.colecciones header.cover {
     max-height: none !important;
     display: block;
   }
-  body.page-nosotros .nosotros-grid {
+
+  /* -- páginas nosotros -- */
+  .page-nosotros .nosotros-grid {
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 2rem 1rem;
   }
-  body.page-nosotros .nosotros-grid .item:nth-child(n+4) {
-    display: none;
+
+  /* ocultar cualquier .item a partir del cuarto*/
+  .page-nosotros .nosotros-grid > .item:nth-child(n+4) {
+    display: none !important;
   }
 }
 
