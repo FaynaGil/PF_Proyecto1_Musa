@@ -569,6 +569,7 @@ body.page-colecciones .navbar {
   background-color: #f8f7f2;
 }
 
+
 body.page-colecciones .nav-links a {
   color: #383e48;    /* color de enlaces */
 }
@@ -587,5 +588,16 @@ body.page-colecciones .breadcrumb {
 
 body.page-colecciones .breadcrumb a { color: #055113;}
 body.page-colecciones .breadcrumb span {color: #333;}
+body.page-colecciones .breadcrumb {
+  width: 100%;
+  background: #8CBF8C;
+  padding: 0.5rem 1rem;
+  box-sizing: border-box;
+  font-size: 0.9rem;
+}
 
+body.page-colecciones .navbar + .breadcrumb {
+  margin-top: 0.25rem;
+}
+.navbar.page-coleciones .menu-toggle { color: #383e48;}
 
