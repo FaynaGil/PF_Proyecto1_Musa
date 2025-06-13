@@ -415,6 +415,12 @@ body.colecciones header.cover {
   body.page-colecciones .nav-links.active li a {
     color: #fff !important;
   }
+
+  body.page-colecciones .colecciones-grid .producto img {
+    width: 100%;
+    height: auto !important;     
+    object-fit: contain !important; 
+  }
 }
 
 
@@ -572,6 +578,8 @@ body.colecciones header.cover {
   }
 
   body.page-colecciones .colecciones-grid {
+    max-width: 900px;       
+    margin: 0 auto;
     padding: 0 2rem;
   }
   body.page-colecciones .colecciones-grid .producto h3 {
