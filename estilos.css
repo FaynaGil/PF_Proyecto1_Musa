@@ -560,6 +560,16 @@ body.colecciones header.cover {
     flex: 0 0 auto;
     text-align: right;
   }
+  body.page-colecciones .page-header {
+    padding: 3rem 2rem;
+  }
+  body.page-colecciones .page-header h2 {
+    font-size: 2.5rem;
+  }
+  body.page-colecciones .page-header p {
+    font-size: 1.125rem;
+    max-width: 800px;
+  }
 }
 
 /* -------------------------------- 
@@ -623,4 +633,31 @@ body.page-colecciones header.cover + .breadcrumb {
     padding-bottom: 0    !important;
   }
   
+  /* ------------------------------------
+     PAGE HEADER COLECCIONES
+     ----------------------------------*/
+
+     body.page-colecciones .page-header {
+      padding: 2rem 1rem;
+      text-align: center;
+      background: #f8f7f2;
+    }
+
+    body.page-colecciones .page-header h2 {
+      font-family: 'Bentham', serif;
+      font-size: 1.75rem;
+      margin-bottom: 0.75rem;
+      color: #383e48;
+    }
+    
+    body.page-colecciones .page-header p {
+      font-family: 'Noto Sans', sans-serif;
+      font-size: 1rem;
+      line-height: 1.5;
+      color: #555;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+
 
