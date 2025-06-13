@@ -571,6 +571,10 @@ body.page-colecciones .nav-links a {
   color: #383e48;    /* color de enlaces */
 }
 
+body.pages-colecciones .menu-toggle {
+  color: #383e48;
+}
+
 body.page-colecciones .icons i {
   color: #383e48;   /* color de iconos */
 }
