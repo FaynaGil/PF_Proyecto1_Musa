@@ -425,17 +425,17 @@ body.colecciones header.cover {
   }
 
   /* -- páginas nosotros -- */
-  .page-nosotros .nosotros-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-    padding: 2rem 1rem;
-  }
+ .body.page-nosotros .nosotros-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 2rem 1rem;
+ }
 
-  /* ocultar cualquier .item a partir del cuarto*/
-  .page-nosotros .nosotros-grid > .item:nth-child(n+4) {
-    display: none !important;
-  }
+ /* ocultar items 4 y siguientes */
+ .body.page-nosotros .nosotros-grid > .item:nth-child(n+4) {
+  display: none !important;
+ }
 }
 
 
@@ -607,11 +607,20 @@ body.colecciones header.cover {
   body.page-nosotros .nosotros-grid {
     display: grid;
     gap: 1rem;
-    padding: 2rem 1rem;
-    margin: 0 auto 3rem;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    justify-items: center;
-    max-width: 1000px;
+    padding: 2rem 2rem;
+    margin: 0;
+    grid-template-columns: repeat(5, 1fr);
+    max-width: 100%;
+  }
+  body.page-nosotros .page-header-nosotros {
+    max-width: 100%;
+    margin: 0;
+    padding: 3rem 2rem;
+  }
+  body.page-nosotros .nosotros-grid .item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
   }
 }
 
