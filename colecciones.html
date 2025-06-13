@@ -41,6 +41,13 @@
            <i class="bi bi-cart"></i>
           </div>
          </nav>
+
+         <!-- RUTA DE NAVEGACIÓN / BREADCRUMB -->
+    <div class="breadcrumb">
+        <a href="index.html">Home</a> / <span>Colecciones</span>
+     </div>
+  
+
   </header>
 
   <!-- RUTA DE NAVEGACIÓN -->
@@ -142,15 +149,14 @@
       <p>&copy; 2025 Musa. Todos los derechos reservados.</p>
     </div>
   </footer>
-  <script src="main.js">
+ <script>
     document.addEventListener('DOMContentLoaded', function(){
-  const toggle = document.querySelector('.menu-toggle');
-  const nav    = document.querySelector('.nav-links');
-  toggle.addEventListener('click', () => {
-    nav.classList.toggle('active');
-  });
-});
-
+      const toggle = document.querySelector('.menu-toggle');
+      const nav    = document.querySelector('.nav-links');
+      toggle.addEventListener('click', () => {
+        nav.classList.toggle('active');
+      });
+    });
   </script>
 
 </body>
