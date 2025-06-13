@@ -464,22 +464,147 @@ body.page-product .breadcrumb span {
  }
 
 /* ---- ficha del producto ---- */
- body.page-product .product-page__action {
+/* 1) Reset y móvil (mobile-first) */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body.page-product {
+  background-color: #f8f7f2;
+  font-family: 'Noto Sans', sans-serif;
+  color: #333;
+}
+/* Header / breadcrumb */
+header.cover {
+  background-image: none;  /* no fondo de plataneras */
+  background-color: transparent;
+  padding: 0;
+}
+.breadcrumb {
+  background: #8CBF8C;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+}
+.breadcrumb a,
+.breadcrumb span {
+  color: #055113;
+  text-decoration: none;
+}
+
+/* GRID móvil: una columna */
+.product-page {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+/* 1. Carrusel (móvil: miniaturas arriba) */
+.product-page__carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+.carousel__thumbnails {
+  display: flex;
+  gap: 0.5rem;
+  overflow-x: auto;
+}
+.carousel__thumbnails img {
+  width: 70px;
+  height: auto;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.carousel__main {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+}
+.carousel__main img {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+}
+.carousel__arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.8);
+  cursor: pointer;
+}
+.carousel__arrow--prev { left: 0.5rem; }
+.carousel__arrow--next { right: 0.5rem; }
+
+/* 2. Información básica */
+.product-page__info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.product-page__title {
+  font-family: 'Bentham', serif;
+  font-size: 1.5rem;
+  color: #383e48;
+}
+.product-page__price {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #383e48;
+}
+.product-page__sizes {
+  display: flex;
+  gap: 0.5rem;
+}
+.product-page__sizes input { display: none; }
+.product-page__sizes label {
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 999px;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+}
+.product-page__sizes input:checked + label {
+  background: #8CBF8C;
+  border-color: #8CBF8C;
+  color: #fff;
+}
+.btn--add-cart {
+  background: #055113;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.btn--add-cart:hover {
+  background: #04430f;
+}
+
+/* 3. Descripción */
+.product-page__description {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  line-height: 1.6;
+}
+.product-page__description h2 {
+  font-family: 'Bentham', serif;
+  margin-bottom: 0.75rem;
+  color: #383e48;
+}
+
+/* 4. Ocultar la sección de acción redundante en móvil */
+.product-page__action {
   display: none;
-  }
-  body.page-product .product-page__action {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    align-items: center;
-  }
-  /* reutilizamos estilos de tamaños */
-  body.page-product .product-page__action .product-page__sizes {
-    gap: 0.5rem;
-  }
-  body.page-product .product-page__action .btn--add-cart {
-    width: 100%;
-  }
+}
 
 
 }
@@ -956,22 +1081,11 @@ body.page-nosotros .breadcrumb span { color: #333; }
    FICHA DE PRODUCTO
 ------------------------- */
 /* sin imagen de fondo en producto*/
-body.page-product header.cover {
-  background-image: none !important;
-  background-color: transparent;
-  height: auto;
-  padding: 0;
-}
-body.page-product {
-  background-color: #f8f7f2;
-  color: #333;
-  font-family: 'Noto Sans', sans-serif;
-}
-
-body.page-product .product-page {
+/* Grid principal de dos columnas + descripción abajo */
+.product-page {
   display: grid;
-  grid-template-columns: 1fr 1fr;            /* dos columnas iguales */
-  grid-template-rows: auto auto;            /* luego dos filas */
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
   grid-template-areas:
     "carousel info"
     "description description";
@@ -980,75 +1094,37 @@ body.page-product .product-page {
   margin: 0 auto;
   padding: 2rem;
 }
-  /* Ubicación de cada sección */
-  body.page-product .product-page__carousel    { grid-area: carousel; }
-  body.page-product .product-page__info        { grid-area: info; }
-  body.page-product .product-page__description { grid-area: description; }
+.product-page__carousel    { grid-area: carousel; }
+.product-page__info        { grid-area: info; }
+.product-page__description { grid-area: description; }
 
-  /* Carrusel: miniaturas en columna izquierda, imagen grande a la derecha */
-  body.page-product .carousel__thumbnails {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    margin-right: 1rem;
-    width: auto;
-  }
-  body.page-product .carousel__thumbnails img {
-    width: 60px;
-    border-radius: 8px;
-    cursor: pointer;
-  }
+/* Carrusel: miniaturas en columna */
+.carousel__thumbnails {
+  flex-direction: column;
+  width: auto;
+  margin-right: 1rem;
+}
+.carousel__thumbnails img {
+  width: 60px;
+  margin-bottom: 0.5rem;
+}
 
-  body.page-product .carousel__main {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-  }
-  body.page-product .carousel__main img {
-    max-width: 100%;
-    border-radius: 8px;
-  }
-  body.page-product .carousel__arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 32px;
-    height: 32px;
-    border: none;
-    border-radius: 50%;
-    background: rgba(255,255,255,0.8);
-    cursor: pointer;
-  }
-  body.page-product .carousel__arrow--prev { left: 0.5rem; }
-  body.page-product .carousel__arrow--next { right: 0.5rem; }
+.carousel__main {
+  max-width: none;
+}
 
-  /* Ajustes de info básica */
-  body.page-product .product-page__info {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    justify-content: start;
-  }
-  body.page-product .product-page__sizes {
-    gap: 0.5rem;
-  }
-  body.page-product .product-page__sizes label {
-    border-radius: 999px;
-    padding: 0.5rem 1rem;
-  }
-  body.page-product .btn--add-cart {
-    width: fit-content;
-  }
+/* Información: ajustar anchos y espaciar hacia arriba */
+.product-page__info {
+  justify-content: start;
+}
+.btn--add-cart {
+  width: fit-content;
+}
 
-  /* Descripción ocupa ambas columnas */
-  body.page-product .product-page__description {
-    padding: 2rem;
-    background: #fff;
-    border-radius: 8px;
-    line-height: 1.6;
-  }
+/* Eliminar el pequeño botón/selector que habías duplicado */
+.product-page__action {
+  display: none !important;
+}
 
 
 
