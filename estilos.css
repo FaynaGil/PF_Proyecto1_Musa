@@ -320,6 +320,17 @@ body.colecciones header.cover {
   padding: 1rem;
 }
 
+/* -- FICHA DEL PRODUCTO -- */
+body.page-product .breadcrumb {
+  background: #8CBF8C;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+}
+body.page-product .breadcrumb a,
+body.page-product .breadcrumb span {
+  color: #055113;
+  text-decoration: none;
+}
 
 /* ----------------------------
    Media Queries: Móvil
@@ -451,6 +462,26 @@ body.colecciones header.cover {
   display: block;
   border-radius: 8px;
  }
+
+/* ---- ficha del producto ---- */
+ body.page-product .product-page__action {
+  display: none;
+  }
+  body.page-product .product-page__action {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+  /* reutilizamos estilos de tamaños */
+  body.page-product .product-page__action .product-page__sizes {
+    gap: 0.5rem;
+  }
+  body.page-product .product-page__action .btn--add-cart {
+    width: 100%;
+  }
+
+
 }
 
 
@@ -638,6 +669,133 @@ body.colecciones header.cover {
     object-fit: cover;
     border-radius: 8px;
   }
+  body.page-product .product-page {
+    grid-template-columns: 2fr 1fr;
+    align-items: start;
+  }
+  /* Forzar que la descripción quede en la segunda columna */
+  body.page-product .product-page__description {
+    grid-column: 2;
+  }
+  /* ---- CARRUSEL ---- */
+body.page-product .product-page__carousel {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Mini-thumbnails */
+body.page-product .carousel__thumbnails {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+body.page-product .carousel__thumbnails {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+}
+body.page-product .carousel__thumbnails img {
+width: 60px;
+height: auto;
+border-radius: 8px;
+cursor: pointer;
+}
+
+/* Imagen principal + flechas */
+body.page-product .carousel__main {
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+body.page-product .carousel__main img {
+max-width: 100%;
+border-radius: 8px;
+display: block;
+}
+body.page-product .carousel__arrow {
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+width: 30px;
+height: 30px;
+border: none;
+border-radius: 50%;
+background: rgba(255,255,255,0.8);
+cursor: pointer;
+}
+body.page-product .carousel__arrow--prev { left: 0.5rem; }
+body.page-product .carousel__arrow--next { right: 0.5rem; }
+
+/* ---- INFORMACIÓN BÁSICA ---- */
+body.page-product .product-page__info {
+display: flex;
+flex-direction: column;
+gap: 1rem;
+}
+body.page-product .product-page__title {
+font-family: 'Bentham', serif;
+font-size: 1.75rem;
+margin: 0;
+color: #383e48;
+}
+body.page-product .product-page__price {
+font-size: 1.5rem;
+font-weight: bold;
+color: #383e48;
+}
+
+/* Selectores de tamaño */
+body.page-product .product-page__sizes {
+display: flex;
+gap: 0.5rem;
+}
+body.page-product .product-page__sizes input {
+display: none;
+}
+body.page-product .product-page__sizes label {
+cursor: pointer;
+border: 1px solid #ccc;
+border-radius: 999px;
+padding: 0.5rem 1rem;
+font-size: 0.9rem;
+}
+body.page-product .product-page__sizes input:checked + label {
+background: #8CBF8C;
+border-color: #8CBF8C;
+color: #fff;
+}
+
+/* Botón añadir al carrito */
+body.page-product .btn--add-cart {
+background: #055113;
+color: #fff;
+padding: 0.75rem 1.5rem;
+border: none;
+border-radius: 8px;
+font-size: 1rem;
+cursor: pointer;
+text-align: center;
+}
+body.page-product .btn--add-cart:hover {
+background: #04430f;
+}
+
+/* ---- DESCRIPCIÓN ---- */
+body.page-product .product-page__description {
+background: #fff;
+padding: 1.5rem;
+border-radius: 8px;
+line-height: 1.6;
+}
+body.page-product .product-page__description h2 {
+font-family: 'Bentham', serif;
+margin-top: 0;
+margin-bottom: 0.75rem;
+color: #383e48;
 }
 
 /* -------------------------------- 
@@ -792,6 +950,24 @@ body.page-nosotros .breadcrumb span { color: #333; }
   font-size: 1rem;
   line-height: 1.6;
   color: #555;
+}
+
+/* -------------------------
+   FICHA DE PRODUCTO
+------------------------- */
+body.page-product {
+  background-color: #f8f7f2;
+  color: #333;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+body.page-product .product-page {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
 }
 
 
