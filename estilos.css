@@ -570,6 +570,13 @@ body.colecciones header.cover {
     font-size: 1.125rem;
     max-width: 800px;
   }
+
+  body.page-colecciones .colecciones-grid {
+    padding: 0 2rem;
+  }
+  body.page-colecciones .colecciones-grid .producto h3 {
+    font-size: 1.5rem;
+  }
 }
 
 /* -------------------------------- 
@@ -658,6 +665,31 @@ body.page-colecciones header.cover + .breadcrumb {
       max-width: 600px;
       margin: 0 auto;
     }
+
+    /* ----------------------------
+   GRID DE COLECCIONES
+---------------------------- */
+body.page-colecciones .colecciones-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  padding: 0 1rem;
+  margin-bottom: 2rem;
+}
+
+body.page-colecciones .colecciones-grid .producto img {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+}
+
+body.page-colecciones .colecciones-grid .producto h3 {
+  font-family: 'Bentham', serif;
+  font-size: 1.25rem;
+  color: #383e48;
+  text-align: center;
+  margin-top: 0.5rem;
+}
 
 
 
