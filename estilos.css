@@ -753,19 +753,15 @@ body.page-nosotros .breadcrumb span { color: #333; }
   gap: 1rem;
   padding: 2rem 1rem;
   margin-bottom: 3rem;
-  /* desktop: 5 imágenes centradas en dos filas */
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  /* desktop: 3 imágenes centradas en una fila */
+  grid-template-columns: repeat(3, 1fr);
   justify-items: center;
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
 }
-.nosotros-grid .item img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  display: block;
-  object-fit: contain;
+.nosotros-grid .item img:nth-child(n+4){  /* oculta a partir del cuarto item*/
+ display: none;
 }
 
 
