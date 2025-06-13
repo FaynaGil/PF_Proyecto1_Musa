@@ -976,14 +976,16 @@ body.page-product {
 }
 
 body.page-product .header.cover {
-  margin-bottom: 0;
+ height: auto !important;
+ min-height: 0 !important;
 }
 
-body.page-product .breadcrumb {
-  margin-top: 0;
+body.page-product .header.cover + .breadcrumb {
+  margin-top: 0 !important;
 }
 
 body.page-product .navbar .icons .i,
+body.page-product .navbar .menu-toggle i,
 body.page-product .navbar .nav-links li a {
   color: #383e48 !important;
 }
