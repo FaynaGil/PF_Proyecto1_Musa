@@ -806,10 +806,6 @@ color: #383e48;
    Estilos para page-colecciones
    -------------------------------*/
 
-body.page-colecciones .cover {
-  background-image: none;
-}
-
 body.page-colecciones {
   background-color: #f8f7f2;
 }
@@ -959,6 +955,13 @@ body.page-nosotros .breadcrumb span { color: #333; }
 /* -------------------------
    FICHA DE PRODUCTO
 ------------------------- */
+/* sin imagen de fondo en producto*/
+body.page-product header.cover {
+  background-image: none !important;
+  background-color: transparent;
+  height: auto;
+  padding: 0;
+}
 body.page-product {
   background-color: #f8f7f2;
   color: #333;
