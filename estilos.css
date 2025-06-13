@@ -425,7 +425,7 @@ body.colecciones header.cover {
   }
 
   /* -- páginas nosotros -- */
- .body.page-nosotros .nosotros-grid {
+ body.page-nosotros .nosotros-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
@@ -433,7 +433,7 @@ body.colecciones header.cover {
  }
 
  /* ocultar items 4 y siguientes */
- .body.page-nosotros .nosotros-grid > .item:nth-child(n+4) {
+ body.page-nosotros .nosotros-grid > .item:nth-child(n+4) {
   display: none !important;
  }
 }
