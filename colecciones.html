@@ -142,6 +142,16 @@
       <p>&copy; 2025 Musa. Todos los derechos reservados.</p>
     </div>
   </footer>
+  <script src="main.js">
+    document.addEventListener('DOMContentLoaded', function(){
+  const toggle = document.querySelector('.menu-toggle');
+  const nav    = document.querySelector('.nav-links');
+  toggle.addEventListener('click', () => {
+    nav.classList.toggle('active');
+  });
+});
+
+  </script>
 
 </body>
 </html>
