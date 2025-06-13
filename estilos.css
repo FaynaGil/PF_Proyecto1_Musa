@@ -705,5 +705,61 @@ body.page-colecciones .colecciones-grid .producto h3 {
   margin-top: 0.5rem;
 }
 
+/* --------------------------------
+   PÁGINA NOSOTROS
+---------------------------------*/
+body.page-nosotros {
+  background-color: #f8f7f2;
+}
+
+/* Breadcrumb */
+body.page-nosotros .breadcrumb {
+  background: #8CBF8C;
+}
+body.page-nosotros .breadcrumb a { color: #055113; }
+body.page-nosotros .breadcrumb span { color: #333; }
+
+/* HEADER "Nuestra historia" */
+.page-header-nosotros {
+  padding: 2rem 1rem;
+  text-align: center;
+  background: #fff;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.page-header-nosotros h2 {
+  font-family: 'Bentham', serif;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  color: #383e48;
+}
+.page-header-nosotros p {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* GALERÍA DE NOSOTROS */
+.nosotros-grid {
+  display: grid;
+  gap: 1rem;
+  padding: 2rem 1rem;
+  margin-bottom: 3rem;
+  /* desktop: 5 imágenes centradas en dos filas */
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  justify-items: center;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.nosotros-grid .item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  object-fit: contain;
+}
+
 
 

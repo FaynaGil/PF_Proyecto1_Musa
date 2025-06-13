@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Página Nosotros de Musa, perfumería de autor.">
+  <title>Musa – Nosotros</title>
+
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="./estilos.css" />
+  <!-- Iconografía -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet"/>
+</head>
+<body class="page-nosotros">
+
+  <!-- NAVBAR -->
+  <header class="cover">
+    <nav class="navbar">
+      <button class="menu-toggle"><i class="bi bi-list"></i></button>
+      <div class="logo">
+        <img src="assets/LogosMusa/LogoFlorMusaMoradoBeige.png" alt="Logo móvil" class="logo-mobile">
+        <img src="assets/LogosMusa/LogotipoPrincipal.png" alt="Logo escritorio" class="logo-desktop">
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+      <div class="icons">
+        <i class="bi bi-person"></i>
+        <i class="bi bi-search"></i>
+        <i class="bi bi-cart"></i>
+      </div>
+    </nav>
+  </header>
+
+  <!-- BREADCRUMB -->
+  <div class="breadcrumb">
+    <a href="index.html">Home</a> / <span>Nosotros</span>
+  </div>
+
+  <!-- NUESTRA HISTORIA -->
+  <section class="page-header-nosotros">
+    <h2>Nuestra historia</h2>
+    <p>
+      En Musa, creemos que el verdadero lujo nace de la simplicidad y el respeto por la naturaleza. 
+      Nuestro viaje comenzó con la pasión por rescatar ingredientes autóctonos canarios: perfume de la flor de tajinaste, miel de palma, cacao puro y otras plantas endémicas. 
+      Cada uno de nuestros productos está elaborado de manera artesanal, combinando tradición y modernidad para ofrecerte una experiencia sensorial única.
+    </p>
+  </section>
+
+  <!-- GALERÍA DE IMÁGENES -->
+  <main class="nosotros">
+    <div class="nosotros-grid">
+      <div class="item">
+        <img src="assets/img/pack_spa_3.png" alt="Pack spa 1">
+      </div>
+      <div class="item">
+        <img src="assets/img/pac_spa_1.png" alt="Pack spa 2">
+      </div>
+      <div class="item">
+        <img src="assets/img/vela_1_5.png" alt="Vela artesanal">
+      </div>
+      <div class="item">
+        <img src="assets/img/perfume_4.png" alt="Perfume 4">
+      </div>
+      <div class="item">
+        <img src="assets/img/perfume_2.png" alt="Perfume 2">
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__top">
+      <ul class="footer__links">
+        <li><a href="#">Políticas</a></li>
+        <li><a href="#">Suscripciones</a></li>
+        <li><a href="#">Datos de la empresa</a></li>
+      </ul>
+      <div class="footer__logo">
+        <img src="assets/LogosMusa/LogoMusaBlanco.png" alt="Logo Musa blanco">
+      </div>
+      <div class="footer__map">
+        <img src="assets/LogosMusa/mapa.png" alt="Mapa de ubicación">
+      </div>
+    </div>
+    <div class="footer__social">
+      <i class="bi bi-whatsapp"></i>
+      <i class="bi bi-youtube"></i>
+      <i class="bi bi-tiktok"></i>
+      <i class="bi bi-twitter"></i>
+      <i class="bi bi-telegram"></i>
+      <i class="bi bi-instagram"></i>
+    </div>
+    <div class="footer__bottom">
+      <p>&copy; 2025 Musa. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function(){
+      const toggle = document.querySelector('.menu-toggle');
+      const nav    = document.querySelector('.nav-links');
+      toggle.addEventListener('click', () => nav.classList.toggle('active'));
+    });
+  </script>
+</body>
+</html>
+
