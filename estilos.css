@@ -561,6 +561,7 @@ body.page-colecciones {
 }
 
 body.page-colecciones .navbar {
+  position: relative;
   background-color: #f8f7f2;
 }
 
