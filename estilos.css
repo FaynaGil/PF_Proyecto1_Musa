@@ -420,7 +420,7 @@ body.colecciones header.cover {
     width: 100%;
     height: auto !important;     
     object-fit: contain !important; 
-    border-radius: 8px;
+    max-height: none !important;
     display: block;
   }
 }
