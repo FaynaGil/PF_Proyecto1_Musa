@@ -754,7 +754,7 @@ body.page-nosotros .breadcrumb span { color: #333; }
   padding: 2rem 1rem;
   margin-bottom: 3rem;
   /* desktop: 3 imágenes centradas en una fila */
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 3fr);
   justify-items: center;
   max-width: 1000px;
   margin-left: auto;
