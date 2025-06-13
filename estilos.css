@@ -423,6 +423,12 @@ body.colecciones header.cover {
     max-height: none !important;
     display: block;
   }
+  body.page-nosotros .nosotros-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  body.page-nosotros .nosotros-grid .item:nth-child(n+4) {
+    display: none;
+  }
 }
 
 
@@ -591,6 +597,15 @@ body.colecciones header.cover {
   body.page-colecciones .colecciones-grid .producto h3 {
     font-size: 1.5rem;
   }
+  body.page-nosotros .nosotros-grid {
+    display: grid;
+    gap: 1rem;
+    padding: 2rem 1rem;
+    margin: 0 auto 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    justify-items: center;
+    max-width: 1000px;
+  }
 }
 
 /* -------------------------------- 
@@ -747,22 +762,7 @@ body.page-nosotros .breadcrumb span { color: #333; }
   color: #555;
 }
 
-/* GALERÍA DE NOSOTROS */
-.nosotros-grid {
-  display: grid;
-  gap: 1rem;
-  padding: 2rem 1rem;
-  margin-bottom: 3rem;
-  /* desktop: 3 imágenes centradas en una fila */
-  grid-template-columns: repeat(1, 3fr);
-  justify-items: center;
-  max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.nosotros-grid .item img:nth-child(n+4){  /* oculta a partir del cuarto item*/
- display: none;
-}
+
 
 
 
