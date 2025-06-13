@@ -449,6 +449,7 @@ body.colecciones header.cover {
   height: auto;
   object-fit: cover;
   display: block;
+  border-radius: 8px;
  }
 }
 
@@ -590,6 +591,7 @@ body.colecciones header.cover {
   .footer__map img {
     max-width: 60px;
     width: auto;
+    border-radius: 8px;
   }
   .footer__map {
     flex: 0 0 auto;
@@ -635,6 +637,7 @@ body.colecciones header.cover {
     width: 100%;
     height: auto;
     object-fit: cover;
+    border-radius: 8px;
   }
 }
 
