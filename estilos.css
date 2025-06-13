@@ -731,6 +731,10 @@ body.page-product .carousel__arrow--prev { left: 0.5rem; }
 body.page-product .carousel__arrow--next { right: 0.5rem; }
 
 /* ---- INFORMACIÓN BÁSICA ---- */
+
+body.page-product .cover {
+  background-image: none;
+}
 body.page-product .product-page__info {
 display: flex;
 flex-direction: column;
