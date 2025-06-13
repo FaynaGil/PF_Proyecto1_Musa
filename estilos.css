@@ -597,10 +597,11 @@ body.page-colecciones .breadcrumb {
   padding: 0.5rem 1rem;
   box-sizing: border-box;
   font-size: 0.9rem;
+  margin: 0;
 }
 
 body.page-colecciones .navbar + .breadcrumb {
-  margin-top: 0.25rem;
+  margin-top: 0;
 }
 
 
