@@ -600,9 +600,10 @@ body.page-colecciones .breadcrumb {
   margin: 0;
 }
 
-body.page-colecciones .navbar + .breadcrumb {
+body.page-colecciones header.cover + .breadcrumb {
   margin-top: 0;
 }
+
 /* --- height: 80vh ya no se aplicará en colecciones ni en las siguientes páginas ---*/
 
 /* ------------------------------------------- 
