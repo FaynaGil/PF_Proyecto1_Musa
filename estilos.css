@@ -420,6 +420,8 @@ body.colecciones header.cover {
     width: 100%;
     height: auto !important;     
     object-fit: contain !important; 
+    border-radius: 8px;
+    display: block;
   }
 }
 
@@ -578,9 +580,13 @@ body.colecciones header.cover {
   }
 
   body.page-colecciones .colecciones-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
     max-width: 900px;       
-    margin: 0 auto;
-    padding: 0 2rem;
+    margin: 2rem auto;
+    padding: 0;
+    justify-items: center;
   }
   body.page-colecciones .colecciones-grid .producto h3 {
     font-size: 1.5rem;
